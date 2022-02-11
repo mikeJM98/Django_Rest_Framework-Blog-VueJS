@@ -47,10 +47,8 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_WHITELIST = (
-    'http://gelveriano.dev-ptoject.com/',
-    'https://gelveriano.dev-ptoject.com/',
-    'http://dev-ptoject.com/',
-    'https://dev-ptoject.com/',
+    'http://gelveriano.dev-ptoject.com',
+    'http://dev-ptoject.com',
 )
 
 CORS_ALLOW_HEADERS = list(default_headers) + [
