@@ -12,7 +12,7 @@ SECRET_KEY = env('SECRET_KEY')
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['gelveriano.dev-ptoject.com','dev-ptoject.com']
 
 
 # Application definition
@@ -47,12 +47,10 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_WHITELIST = (
-
-    'http://gelveriano.dev-ptoject.com/'
-    'https://gelveriano.dev-ptoject.com/'
-    'http://dev-ptoject.com/'
-    'https://dev-ptoject.com/'
-
+    'http://gelveriano.dev-ptoject.com/',
+    'https://gelveriano.dev-ptoject.com/',
+    'http://dev-ptoject.com/',
+    'https://dev-ptoject.com/',
 )
 
 CORS_ALLOW_HEADERS = list(default_headers) + [
