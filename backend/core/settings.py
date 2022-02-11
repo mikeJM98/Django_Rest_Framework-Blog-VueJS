@@ -12,7 +12,7 @@ SECRET_KEY = env('SECRET_KEY')
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -47,14 +47,12 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_WHITELIST = (
-    'http://localhost:8000',
-    'http://127.0.0.1:8000',
 
-    'http://localhost:8080',
-    'http://127.0.0.1:8080',
+    'http://gelveriano.dev-ptoject.com/'
+    'https://gelveriano.dev-ptoject.com/'
+    'http://dev-ptoject.com/'
+    'https://dev-ptoject.com/'
 
-    'http://localhost:3000',
-    'http://127.0.0.1:3000',
 )
 
 CORS_ALLOW_HEADERS = list(default_headers) + [
@@ -87,7 +85,7 @@ DATABASES = {
 	'ENGINE': 'django.db.backends.mysql',
 	'NAME': 'restfull',
 	'USER': 'root',
-	'PASSWORD': 'mikeJM98@ec2',
+	'PASSWORD': 'Dev@123456',
 	'HOST': 'localhost',
 	'PORT': '3306',
         #'ENGINE': 'django.db.backends.sqlite3',
